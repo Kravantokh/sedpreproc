@@ -25,7 +25,7 @@ evaluates to
 ```
 A variable's value can contain spaces.
 ```
-The evaluator symbol can be changed by setting the SED_EVALUATOR_SYMBOL variable's value. (This has been done in the unprocessed version up until now so as not to evaluate the dollar signs so far.
+The evaluator symbol can be changed by setting the SED_EVALUATOR_SYMBOL variable's value. (This has been done in the unprocessed version up until now so as not to evaluate the dollar signs so far.)
 Example: 
 ```
 $SED_EVALUATOR_SYMBOL=@
@@ -98,4 +98,4 @@ this works as expected
 ```
 
 # Notes
-If you do not with do break the script in any way be careful whenever declaring any variables starting with SED_. The only two such value that are intended to be used and relied upon are `SED_PREPROC_VER` and `SED_EVALUATOR_SYMBOL`. SED_PREPROC_VER always expands into the current version fo the sed preprocessor script.
+If you do not wish to break the script in any way be careful whenever declaring any variables starting with SED_. The only two such value that are intended to be used and relied upon are `SED_PREPROC_VER` and `SED_EVALUATOR_SYMBOL`. SED_PREPROC_VER always expands into the current version fo the sed preprocessor script.
